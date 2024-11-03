@@ -12,6 +12,9 @@ fisher install nickeb96/puffer-fish
 fisher install PatrickF1/fzf.fish
 "
 
+mkdir /home/vscode/.local/bin
+ln -s /usr/bin/go-task /home/vscode/.local/bin/task
+
 # Create/update virtual environment
 if ! grep -q "venv /workspaces/" .venv/pyvenv.cfg; then
     rm -rf .venv
